@@ -128,11 +128,13 @@ p {
   padding: 200px 0;
   text-align: center;
   background-color: var(--under-bg-color);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg.jpg");
-   background-repeat: no-repeat;
-   background-position-x: center;
-  
-
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .hero-title {
   font-size: 44px;
@@ -206,13 +208,13 @@ p {
   background-color: var(--light-background);
 }
 .social-icons {
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
 }
 .social-icon-link,
- .footer-social-icon-link {
+.footer-social-icon-link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -287,7 +289,11 @@ p {
   display: flex;
   margin-top: -30px;
   margin-left: -30px;
-  
+}
+.customer-item {
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc((100% - 180px) / 6);
 }
 .customer-link {
   border: 1px solid var(--icons-color);
@@ -297,9 +303,6 @@ p {
   align-items: center;
   justify-content: center;
   height: 92px;
-  margin-left: 30px;
-  margin-top: 30px;
-  flex-basis: calc((100% - 180px) / 6);
 }
 .customer-link:hover,
 .customer-link:focus {
@@ -317,8 +320,8 @@ p {
 .left-column {
   margin-right: 70px;
 }
-.second-column {
-  padding-top: 12px;
+.footer-row {
+  align-items: baseline;
 }
 .footer-social-icon-link {
   background: rgba(255, 255, 255, 0.1);
@@ -326,7 +329,7 @@ p {
 .footer-social-icon {
   fill: var(--white-color);
 }
-.footer-social-icon-link:not(:last-child) {
+.footer-social-item:not(:last-child) {
   margin-right: 10px;
 }
 .footer-social-icon-link:hover,
@@ -414,7 +417,8 @@ p {
 .portfolio-card-link:focus {
   box-sizing: border-box;
   display: block;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .project-type {
   font-size: 16px;
